@@ -1964,7 +1964,8 @@ class Mailbox
                 }
 
                 // https://github.com/barbushin/php-imap/issues/339
-                $name = $this->decodeStringFromUtf7ImapToUtf8($item_name);
+                // $name = $this->decodeStringFromUtf7ImapToUtf8($item_name);
+                $name = Imap::decodeStringFromUtf7ImapToUtf8($item_name);
                 $name_pos = \strpos($name, '}');
                 if (false === $name_pos) {
                     throw new UnexpectedValueException('Expected token "}" not found in subscription name!');
