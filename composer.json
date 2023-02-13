@@ -1,5 +1,5 @@
 {
-    "name": "sn01615/php-imap",
+    "name": "sn01615/php-imap-0",
     "description": "Manage mailboxes, filter/get/delete emails in PHP (supports IMAP/POP3/NNTP)",
     "keywords": [
         "PHP",
